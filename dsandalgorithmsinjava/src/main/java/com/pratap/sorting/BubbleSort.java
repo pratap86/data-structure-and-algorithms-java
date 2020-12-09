@@ -1,6 +1,6 @@
 package com.pratap.sorting;
 
-import com.pratap.utils.DSUtils;
+import com.pratap.utils.DSSortUtils;
 
 public class BubbleSort {
 
@@ -14,7 +14,7 @@ public class BubbleSort {
 			for(int i = 0; i < lastUnsortedIndex; i++) {
 				// swap consecutive nums, if first num is greater than immediate num
 				if(intArr[i] > intArr[i+1]) {
-					DSUtils.swapByTempVar(intArr, i, i+1);
+					DSSortUtils.swapByTempVar(intArr, i, i+1);
 				}
 			}
 		}

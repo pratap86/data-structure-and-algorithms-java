@@ -1,6 +1,6 @@
 package com.pratap.utils;
 
-public final class DSUtils {
+public final class DSSortUtils {
 
 	// swapping two int, in intArray
 	// 1. temp Swapping
