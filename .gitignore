@@ -1,5 +1,7 @@
 # Compiled class file
+ws/
 *.class
+.DS_Store
 
 # Log file
 *.log
