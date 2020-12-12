@@ -1,8 +1,13 @@
 package com.pratap.sorting;
 
 import com.pratap.utils.DSSortUtils;
-
-public class BubbleSort {
+/**
+ * BubbleSort is an example of stable sort, swap perform only
+ * if first num is greater than immediate num
+ * @author Pratap Narayan
+ *
+ */
+public class BubbleSortAlgo {
 
 	public static void main(String[] args) {
 
@@ -14,7 +19,7 @@ public class BubbleSort {
 			for(int i = 0; i < lastUnsortedIndex; i++) {
 				// swap consecutive nums, if first num is greater than immediate num
 				if(intArr[i] > intArr[i+1]) {
-					DSSortUtils.swapByTempVar(intArr, i, i+1);
+					DSSortUtils.swapByXOR(intArr, i, i+1);
 				}
 			}
 		}

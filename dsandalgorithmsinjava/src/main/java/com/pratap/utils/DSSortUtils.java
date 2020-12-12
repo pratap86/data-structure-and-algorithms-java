@@ -12,9 +12,9 @@ public final class DSSortUtils {
 	
 	// 2. without temp Swapping
 	public static void swapWithoutTempVar(int[] arr, int i, int j) {
-		arr[i] = arr[i] * arr[j];
-		arr[j] = arr[i] / arr[j];
-		arr[i] = arr[i] / arr[j];
+		arr[i] = arr[i] - arr[j];
+		arr[j] = arr[i] + arr[j];
+		arr[i] = arr[i] - arr[j];
 	}
 	// 3. XOR swapping - more fast
 	public static void swapByXOR(int[] arr, int i, int j) {
