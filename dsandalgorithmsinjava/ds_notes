@@ -1,0 +1,2 @@
+Previously, Java’s Arrays.sort method used Quicksort for arrays of primitives and Merge sort for arrays of objects. 
+In the latest versions of Java, Arrays.sort method and Collection.sort() uses Timsort.
