@@ -22,3 +22,4 @@ Remark -
 1. Not a in-place. Use a temporary array
 2. Time complexity - O(nlogn) - base 2. We're repeatedly dividing the array in half during the splitting phase.
 3. stable algorithm
+--------------------------------------------Quick Sort:---------------------------------------------------
