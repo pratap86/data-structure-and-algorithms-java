@@ -1,5 +1,16 @@
 package com.pratap.sorting;
-
+/**
+ * </pre></blockquote><p>
+ * QuickSortAlgo are:
+ * <blockquote><pre>
+ *     In-Place algorithm
+ *     Complexity is O(nlogn)-base 2, base2 bcz its continuously partitioned.
+ *     Unstable Algorithm
+ * </pre></blockquote>
+ * <p>
+ * @author Pratap Narayan
+ *
+ */
 public class QuickSortAlgo {
 
 	public static void main(String[] args) {
@@ -14,6 +25,7 @@ public class QuickSortAlgo {
 	}
 	
 	public static void quickSort(int[] input, int start, int end) {
+		// terminal condition for single element array.
 		if(end - start < 2) return;
 		
 		int pivotIndex = partition(input, start, end);
@@ -30,15 +42,21 @@ public class QuickSortAlgo {
 		
 		while(i < j) {// both left & right traverser not crossed to each other.
 			
-			// Note : empty loop body
+			// Note : empty loop body, that continuously check i & j not crossed each other 
+			//from left to right greater elm from pivot
 			while(i < j && input[--j] >= pivot);
-			if(i < j) input[i] = input[j];
+			if(i < j) {
+				input[i] = input[j];// assigned jth input into ith input array
+			}
 			
-			// Note : empty loop body
+			// Note : empty loop body, that continuously check i & j not crossed each other 
+			//from right to left lesser elm from pivot
 			while(i < j && input[++i] <= pivot);
-			if(i < j) input[j] = input[i];
+			if(i < j) {
+				input[j] = input[i];// assigned ith input into jth input array
+			}
 		}
-		input[j] = pivot;
+		input[j] = pivot;//once i & j crossed each other
 		return j;
 	}
 
