@@ -7,11 +7,14 @@ repositories {
 }
 
 dependencies {
-	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
-	testImplementation 'org.mockito:mockito-inline:3.7.7'// support mocking static methods
-	testImplementation 'org.mockito:mockito-junit-jupiter:3.7.7'
+    // Use JUnit Jupiter API for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
+    // Use JUnit Jupiter Engine for testing.
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+    testRuntime("org.junit.platform:junit-platform-runner:1.5.2")
 }
 
+// Use junit platform for unit tests
 test {
 	useJUnitPlatform()
 }

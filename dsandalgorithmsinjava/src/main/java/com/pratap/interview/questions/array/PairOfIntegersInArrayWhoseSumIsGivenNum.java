@@ -1,4 +1,4 @@
-package com.pratap.interview.questions;
+package com.pratap.interview.questions.array;
 
 import java.util.HashSet;
 import java.util.Set;

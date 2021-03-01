@@ -23,3 +23,7 @@ Remark -
 2. Time complexity - O(nlogn) - base 2. We're repeatedly dividing the array in half during the splitting phase.
 3. stable algorithm
 --------------------------------------------Quick Sort:---------------------------------------------------
+
+--------------------------------------------Abstract Data Type:---------------------------------------------------
+1. List
+usually an interface
