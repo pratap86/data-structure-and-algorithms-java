@@ -12,6 +12,7 @@
 |`MergeSort`|uses recursion to solve the problem of sorting|O(nlog n)|Stable|
 |`HeapSort`||O(log n)||
 |`QuickSort`|Divide and Conquer algorithm|O(n^2)|Unstable|
+|`BogoSort`||O(N!)||
 
 #### Java Sorting
 |Java API|Description|Complexity|
