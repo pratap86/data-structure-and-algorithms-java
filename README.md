@@ -18,3 +18,14 @@
 |Java API|Description|Complexity|
 |---|---|---|
 |`Arrays.sort()`|uses dual-pivot Quicksort on primitives|O(n log(n))|
+
+#### Quick Sort Algorithms
+- Divide and conquer algorithm
+- Recursive algorithm
+- Uses a pivot element to partition the array into two parts(logical division)
+- Elements < pivot to its left, elements > pivot to its right
+- Pivot will then be in its correct sorted position
+- Process is now repeated for the left sub array and right sub array
+- In Place algorithm
+- O(nlogn) - base 2. we're repeatedly partitioning the array into two halves
+- Unstable algorithm 
