@@ -38,7 +38,7 @@ public class RemoveAGivenCharFromString {
 		return sb.toString();
 	}
 	
-	// recursive way
+	// recursive way ie. in-place approach
 	public static String recursiveRemove(String input, char toRemove) {
 		
 		int targetIndex = input.indexOf(toRemove);

@@ -1,4 +1,4 @@
-package com.pratap.sorting;
+package com.pratap.recursion;
 
 public class RecursionLogic {
 
@@ -20,7 +20,7 @@ public class RecursionLogic {
 	
 	// iterative way
 	public static int iterativeFactorial(int num) {//num=3
-		if (num == 0) return 1;
+		if (num == 0) return 1;// bcz 0! = 1
 		
 		int factorial = 1;
 		for(int i = 1; i <= num; i++) {
@@ -31,8 +31,8 @@ public class RecursionLogic {
 	
 	// recursive way
 	public static int recursiveFactorial(int num) {
-		// if below terminal condition is not present, throw java.lang.StackOverflowErro
-		if (num == 0) return 1;
+		// if below terminal condition is not present, would throw java.lang.StackOverFlowError
+		if (num == 0) return 1;// bcz 0! = 1
 		
 		return num * recursiveFactorial(num - 1);
 	}

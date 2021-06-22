@@ -18,9 +18,9 @@ public class QuickSortAlgo {
 		int[] intArr = {20, 35, -15, 7, 55, 1, -22};
 		
 		quickSort(intArr, 0, intArr.length);
-		
-		for(int i = 0; i < intArr.length; i++) {
-			System.out.println(intArr[i]);
+
+		for (int element : intArr) {
+			System.out.println(element);
 		}
 	}
 	
