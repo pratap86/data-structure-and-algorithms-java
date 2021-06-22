@@ -22,10 +22,12 @@
 #### Quick Sort Algorithms
 - Divide and conquer algorithm
 - Recursive algorithm
-- Uses a pivot element to partition the array into two parts(logical division)
-- Elements < pivot to its left, elements > pivot to its right
-- Pivot will then be in its correct sorted position
-- Process is now repeated for the left sub array and right sub array
 - In Place algorithm
 - O(nlogn) - base 2. we're repeatedly partitioning the array into two halves
-- Unstable algorithm 
+- Unstable algorithm
+- Uses a pivot element to partition the array into two parts(logical division)
+- Elements < pivot to its left, elements > pivot to its right
+- Pivot will then be in its correct sorted position, now pivot in the middle position and its left side elements are less than pivot nnd right side elements are greater than pivot. But it may be possible that elements in Righ and left sub array are unsorted.
+- Process is now repeated for the left sub array and right sub array
+- Eventually, every element has been the pivot, so every element will be in its correct sorted position
+ 
