@@ -19,6 +19,9 @@
 |---|---|---|
 |`Arrays.sort()`|uses dual-pivot Quicksort on primitives|O(n log(n))|
 
+#### Bubble Sort Algorithms
+- Bubble sort algorithm do the continuoius logical partitioning as sorted partition & unsorted partionin
+
 #### Quick Sort Algorithms
 - Divide and conquer algorithm
 - Recursive algorithm
